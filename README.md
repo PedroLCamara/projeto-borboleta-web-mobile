@@ -21,4 +21,4 @@ Visto a dificuldade de locomoção dessas pessoas, a falta dessas informações 
 
 ## Protótipo
 
-<images placeholder>
+~ Não conseguimos adicionar o wireframe por conta do github
