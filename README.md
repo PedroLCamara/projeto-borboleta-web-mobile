@@ -40,11 +40,13 @@ Visto a dificuldade de locomoção dessas pessoas, a falta dessas informações 
 
 ### 4. Eventos
 *    A seção de eventos foi organizada com uma `<section>` principal que engloba todo o conteúdo. Dentro dela, há uma `<section>` secundária responsável por estruturar as informações dos eventos. Cada evento é representado por uma `<section>` própria, contendo duas subdivisões: uma para o conteúdo informativo (texto) e outra para a exibição da imagem correspondente.
+*    Na etapa de estilização, as sectios foram nomeadas de forma intuitiva com o elemento `class`, com excessão da `<section>` principal que foi nomeada com `#eventos`, além disso, foi implementada uma `flexbox` em cada "card" de evento (`.card_evento`) da seção para organizar os conteúdos visuais (`.img_card_evento`) e textuais (`.escrita_card_evento`)
 
 ### 5. Depoimentos dos Eventos
 *    A área de depoimentos foi estruturada com uma `<section>` principal. Em seu interior, há uma `<section>` dedicada à organização dos comentários.
 Cada depoimento é composto por uma section individual, que contém duas partes: uma para a imagem do usuário e outra para o comentário, acompanhado do nome da pessoa.
-
+*    Na etapa de estilização, de forma semelhante a `<section>` anterior, foram implementadas duas `flexbox`: uma para dividir os comentários lado a lado e outra para osganizar o conteúdo escrito e a foto de perfil do escritor. Sua `<section>` principal foi nomeada com o `id #eventos-comentarios`, a `flexbox principal` foi chamada de `#flex_comentarios`, e a `flexbox secundária` (para a organização visual do comentário) foi chamada de `.card_comentarios`, ela se divide nas `<section>s` `.img_comentarios` e `.escrita_comentarios`.
+  
 ### 6. Locais
 *    A seção de locais foi organizada com uma `<section>` principal. Dentro dela, há duas subdivisões: uma `<section>` destinada ao título e ao texto informativo, e outra voltada para a exibição da imagem correspondente.
 
