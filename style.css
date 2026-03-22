@@ -1,5 +1,8 @@
-*{
-    margin:0;
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 #galeria h1, #sobre-nos h1{
@@ -10,6 +13,7 @@
     font-size: 1rem;
     color: #909090;
 }
+/*--Introdução--*/
 
 #introducao{
     background-color: #5e5e5e;
@@ -17,33 +21,151 @@
     padding: 20px;
     text-align: center;
 }
+/*--MENU---*/
+
+header{
+    width: 100%;
+    background-color: #173660;
+}
 
 .menu{
-    background-color: white;
-}
-.menu ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
 }
 
-.menu ul li{
-    display: inline-block;
+.logo{
+    display: flex;
+    align-items: center;
+    width: 5%;
+    height: 5%;
+   
 }
 
-.menu ul li a{
-    font-size: 20px;
-    color: #2d2c55;
+.logo img{
+    width: 110px;
+    height: 60px;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-item{
+    margin: 0 15px;
+}
+
+.menu-link{
+    padding: 10px 5px;
     text-decoration: none;
-    padding: 10px 50px;
-    display: inline-block;
-
+    font-size: 1.15rem;
+    color: #ffff ;
+    font-weight:500 ;
+}
+.menu-link:hover{
+    background-color: #285088;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-btn button{
+    border: none;
+    background-color: #0a182c;
+    padding: 5px 15px;
+    border-radius: 20px;
 }
 
-.menu ul li img{
-    width: 50px;
+.menu-btn button:hover{
+    background-color: #2f5fa3;
+    cursor: pointer;
 }
 
+.menu-btn button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .menu{
+        padding: 1.5rem 4rem;
+    }
+
+    .menu-item{
+        display: none;
+    }
+
+    .menu-btn{
+        display: none;        
+    }
+    
+    
+    .mobile-menu-icon{
+        display: flex;
+        justify-content: center;
+        width: 50px;
+
+    }
+
+    .mobile-menu-icon img{
+        width: 100%;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem ;
+    }
+
+    .mobile-menu .menu-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .menu-btn{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .menu-btn button{
+        width: 100%;
+
+    }
+    
+    .open{
+        display:block;
+    }
+    
+}
+
+/*---EVENTOS-----*/
 
 #eventos{
     width: 60%;
@@ -107,7 +229,7 @@
 #eventos-comentarios{
     width: 100%;
     text-align: center;
-    background-color: #2d2c55;
+    background-color: #173660;
     padding: 3rem 0;
 }
 
@@ -175,7 +297,7 @@
 }
 
 #locais h1 {
-    color: #2d2c55;
+    color: #173660;
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
@@ -206,7 +328,7 @@
 }
 
 .rodape {
-    background-color: #2d2c55 !important;
+    background-color: #173660 !important;
     color: #ffffff;
     padding: 4rem 5% 2rem;
     width: 100%;
@@ -258,7 +380,7 @@
 }
 
 :root {
-    --primary: #2d2c55;
+    --primary: #173660;
     --light: #F6F6F6;
     --light-variation: #e8e8e8;
     --dark: #3c3c3c;
@@ -266,12 +388,6 @@
 
 }
 
-* {
-    font-family: sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 h1{
     font-size: 4rem;
