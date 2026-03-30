@@ -13,14 +13,51 @@
     font-size: 1rem;
     color: #909090;
 }
-/*--Introdução--*/
+/*--------------------------------Introdução-------------*/
 
 #introducao{
-    background-color: #5e5e5e;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+    background-color: #9ebde7;
+    width: 100%;
+    height: 65vh;
+    margin: 0 0 1rem 0;
+    padding: 2rem 5rem 2rem 5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+#introducao h1{
+    text-align: center;
+    color: #173660;
+}
+
+#introducao p{
+    font-size: 1.2rem;
+    color: #000;
+    margin: 2rem;
+    text-align: center;
+    
+}
+
+#btn-int button{
+    border: none;
+    background-color: #062d64;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+#btn-int button:hover{
+    background-color: #285088;
+}
+
+#btn-int button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
 /*--MENU---*/
 
 header{
@@ -104,65 +141,6 @@ header{
 
 .mobile-menu{
     display: none;
-}
-
-@media (max-width: 900px){
-    .menu{
-        padding: 1.5rem 4rem;
-    }
-
-    .menu-item{
-        display: none;
-    }
-
-    .menu-btn{
-        display: none;        
-    }
-    
-    
-    .mobile-menu-icon{
-        display: flex;
-        justify-content: center;
-        width: 50px;
-
-    }
-
-    .mobile-menu-icon img{
-        width: 100%;
-    }
-
-    .mobile-menu-icon button{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem ;
-    }
-
-    .mobile-menu .menu-item{
-        display: block;
-        padding-top: 1.2rem;
-    }
-
-    .mobile-menu .menu-btn{
-        display: block;
-        padding: 1rem 2rem;
-    }
-
-    .mobile-menu .menu-btn button{
-        width: 100%;
-
-    }
-    
-    .open{
-        display:block;
-    }
-    
 }
 
 /*---EVENTOS-----*/
@@ -304,7 +282,7 @@ header{
 }
 
 #locais p {
-    color: #909090;;
+    color: #000;;
     line-height: 1.6;
     font-size: 1.05rem;
 }
@@ -467,4 +445,65 @@ hr {
 .galeria-imgs img:nth-child(2)
 {
     grid-column-end: span 2;
+}
+
+
+@media (max-width: 900px){
+/*-------------------------menu-----------------------*/
+    .menu{
+        padding: 1.5rem 4rem;
+    }
+
+    .menu-item{
+        display: none;
+    }
+
+    .menu-btn{
+        display: none;        
+    }
+    
+    
+    .mobile-menu-icon{
+        display: flex;
+        justify-content: center;
+        width: 50px;
+
+    }
+
+    .mobile-menu-icon img{
+        width: 100%;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem ;
+    }
+
+    .mobile-menu .menu-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .menu-btn{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .menu-btn button{
+        width: 100%;
+
+    }
+    
+    .open{
+        display:block;
+    }
+    
 }
