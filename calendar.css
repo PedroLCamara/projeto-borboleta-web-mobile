@@ -1,0 +1,54 @@
+.container-data-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.date-info-btns {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+.date-info-btns button {
+    background-color: transparent;
+    border: 0;
+}
+
+.container-data-items {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.container-data-items h3{
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background: #2f5fa3;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.ditem{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ditem .ditems-rect {
+    background: seashell;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 0.5rem;
+}
