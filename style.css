@@ -5,10 +5,10 @@
     padding: 0;
 }
 
-#galeria h1,
-#sobre-nos h1,
-#eventos h1,
-#eventos-comentarios h1 {
+#galeria h2,
+#sobre-nos h2,
+#eventos h2,
+#eventos-comentarios h2 {
     font-size: 2.8rem;
 }
 
