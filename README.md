@@ -227,3 +227,22 @@ nextDateBtn.addEventListener('click', () => setDateViz(1));
 ```
 
 *    Na estilização (`calendar.css`), cada dia da semana tem um cabeçalho azul (`h3`) com o nome do dia, e abaixo um retângulo claro (`.ditems-rect`) onde os agendamentos serão exibidos. O layout responsivo mantém a grade legível em diferentes tamanhos de tela.
+
+## Conclusão — Conhecimentos Adquiridos
+---
+
+O desenvolvimento deste projeto proporcionou ao grupo uma experiência prática e completa com as três tecnologias fundamentais do desenvolvimento web: **HTML, CSS e JavaScript**. Abaixo estão os principais conhecimentos consolidados ao longo do processo:
+
+**HTML Semântico:** Aprendemos a importância de escolher as tags certas para cada situação. Em vez de usar `<div>` para tudo, utilizamos tags como `<header>`, `<nav>`, `<main>`, `<footer>`, `<section>` e `<article>`, cada uma com seu papel. A troca de algumas `<section>` por `<article>` (na introdução, no "Sobre Nós" e nos cards de eventos) nos ensinou que `<article>` é ideal para conteúdos independentes e autocontidos — ou seja, blocos que fazem sentido sozinhos — enquanto `<section>` serve para agrupar conteúdos relacionados dentro de um contexto maior.
+
+**CSS Flexbox e Grid:** Praticamos dois dos sistemas de layout mais importantes do CSS moderno. O Flexbox foi utilizado no menu de navegação, nos cards de eventos e nos depoimentos para organizar elementos em linha ou coluna de forma flexível. Já o CSS Grid foi aplicado na galeria de imagens (grade de 4 colunas) e no calendário semanal (grade de 7 colunas), mostrando como o Grid é ideal para layouts em duas dimensões com linhas e colunas bem definidas.
+
+**Responsividade com Media Queries:** Implementamos um menu responsivo que se adapta a telas menores (até 900px), escondendo o menu padrão e exibindo um menu mobile com ícone de hambúrguer. Isso nos ensinou como usar `@media` para criar regras de CSS que só funcionam em determinados tamanhos de tela, garantindo que o site seja acessível tanto em computadores quanto em celulares.
+
+**JavaScript e Manipulação do DOM:** Desenvolvemos diversas funcionalidades interativas usando JavaScript puro, sem nenhuma biblioteca externa. Entre os principais aprendizados estão: a função `menuShow()` que adiciona e remove classes CSS para abrir/fechar o menu mobile; a função `revelaTxt()` que alterna a visibilidade de textos usando `window.getComputedStyle()` para ler o estado real do elemento na tela; e a lógica do calendário com cálculos de datas usando o objeto `Date`, milissegundos e criação dinâmica de elementos com `document.createElement()`.
+
+**Variáveis CSS (Custom Properties):** Utilizamos variáveis CSS (`:root`) para definir as cores do projeto de forma centralizada (como `--primary`, `--light`, `--dark`), facilitando a manutenção e a consistência visual do site inteiro. Quando é preciso mudar uma cor, basta alterar em um único lugar.
+
+**Organização e Estrutura de Projeto:** O projeto nos ensinou a separar responsabilidades em arquivos diferentes: `index.html` e `calendar.html` para as páginas, `style.css` e `calendar.css` para os estilos, e `script.js`, `modal.js` e `calendar.js` para os comportamentos. Essa separação torna o código mais fácil de entender, manter e trabalhar em equipe.
+
+**Impacto Social e Extensão:** Além dos conhecimentos técnicos, o projeto reforçou a importância de usar a tecnologia como ferramenta de inclusão social. Ao criar um site acessível para o CIPCD, aplicamos na prática o conceito de que o desenvolvimento web não é apenas sobre código — é sobre resolver problemas reais e facilitar a vida das pessoas.
