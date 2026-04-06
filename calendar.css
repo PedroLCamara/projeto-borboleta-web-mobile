@@ -19,10 +19,29 @@
 
 .container-data-items {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(7, minmax(150px, 1fr)); /* Prevents squishing */
+    gap: 1.5rem;
+    padding: 1rem;
     margin-bottom: 2rem;
-    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    border-radius: 12px;
+}
+
+.container-data-items::-webkit-scrollbar {
+    height: 8px;
+}
+.container-data-items::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+.container-data-items::-webkit-scrollbar-thumb {
+    background: #2f5fa3;
+    border-radius: 10px;
+}
+.container-data-items::-webkit-scrollbar-thumb:hover {
+    background: #1e3d6b;
 }
 
 .container-data-items h3{
@@ -40,7 +59,7 @@
 
 .ditem{
     position: relative;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     gap: 1rem;

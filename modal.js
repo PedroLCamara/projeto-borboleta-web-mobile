@@ -5,7 +5,7 @@ const btnOk = document.getElementById("btnOk");
 
 btnEntrar.addEventListener("click", (e) => {
     e.preventDefault();
-    modal.style.display = "block";
+    modal.style.display = "flex";
 });
 
 const fecharModal = () => modal.style.display = "none";
